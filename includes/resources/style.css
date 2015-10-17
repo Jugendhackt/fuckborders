@@ -10,10 +10,10 @@ body {
 	position:absolute;
 	z-index:2;
 	height:52px;
-	width:430px;
+	width:300px;
 	background-color: white;
 	left: 50%;
-	margin-left: -215px;
+	margin-left: -150px;
 	box-shadow: 0 1px 5px rgba(0,0,0,0.65);
 	border-radius: 5px;
 	margin-top: 10px;
