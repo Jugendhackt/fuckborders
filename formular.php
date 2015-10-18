@@ -1,10 +1,17 @@
-<form id="form">
+<?php
+if(isset($_POST['submit_setpoint'])){
+	
+	echo"Thank for you for contribution!";
+}else{
+
+?>
+<form method="POST" action="#">
 	<p>
 		<label for="Typ of border">Type of border</label>
 		<br>
 		<input type="checkbox" name="check_typeofborder1" value="border control" id="Type of border">border control
 		<br>
-		<input type="checkbox" name="check_typeofcorder2" value="border fence" id="Type of border">border fence
+		<input type="checkbox" name="check_typeofcorder2" value="border fence" id="Type of border">border fence 
 		<br>
 		<input type="checkbox" name="check_typeofborder3" value="cameras" id="Type of border">cameras
 		<br>
@@ -46,5 +53,7 @@
 			<input id="Other informations" minlength="1" maxlength="250">
 			<br>
 			
-			<button type="button" id="Set">Set</button>
+			<button type="submit" name="submit_setpoint">Set Point</button>
 </form>
+<?php
+	}
