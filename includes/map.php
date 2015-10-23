@@ -14,6 +14,9 @@
 	
 </script>
 <?php
+$mysql = new mysql;
+$mysql->database_connect();
 $points = new mysql;
 $points->database_read_Points();
+
 ?>
